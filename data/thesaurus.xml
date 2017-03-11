@@ -1,0 +1,136 @@
+<thesaurus xmlns="http://marklogic.com/xdmp/thesaurus">
+    <metadata>
+        <package-name>Thesaurus</package-name>
+        <date>2004-08-17</date>
+        <version>1.0</version>
+        <authors>
+            <author>Mark Logic</author>
+        </authors>
+        <description>
+            This thesaurus is based on the wordnet thesaurus included in the
+            MyThes-1.0 software. A small script was written to extract
+            valid xml from the data files.
+        </description>
+        <copyright>
+            This thesaurus is provided at no cost by Mark Logic
+            Corporation, subject to the enclosed restrictions. Mark Logic
+            Corporation disclaims any liability resulting directly or indirectly
+            from any access or use, whether proper or improper, of (a) the
+            information contained in this document or (b) functionality in Mark
+            Logic or other application software that makes use of information
+            contained in this document. Any reproduction or modification of all
+            or part of the information contained in this document is governed by
+            and must be accompanied by the attached license and copyright
+            notices.
+        </copyright>
+        <sources>
+            <source>
+                <package-name>MyThes-1.0</package-name>
+                <author>Kevin B. Hendricks</author>
+                <copyright>
+                    Redistribution and use in source and binary forms, with or without
+                    modification, are permitted provided that the following conditions
+                    are met:
+
+                    1. Redistributions of source code must retain the above copyright
+                    notice, this list of conditions and the following disclaimer.
+
+                    2. Redistributions in binary form must reproduce the above copyright
+                    notice, this list of conditions and the following disclaimer in the
+                    documentation and/or other materials provided with the distribution.
+
+                    3. All modifications to the source code must be clearly marked as
+                    such. Binary redistributions based on modified source code
+                    must be clearly marked as modified versions in the documentation
+                    and/or other materials provided with the distribution.
+
+                    THIS SOFTWARE IS PROVIDED BY KEVIN B. HENDRICKS AND CONTRIBUTORS
+                    ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+                    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+                    FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+                    KEVIN B. HENDRICKS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+                    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+                    BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+                    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+                    HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+                    LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+                    OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+                    SUCH DAMAGE.
+                </copyright>
+                <sources>
+                    <source>
+                        <package-name>WordNet Database</package-name>
+                        <author>Princeton University</author>
+                        <copyright>
+                            This software and database is being provided to you, the LICENSEE,
+                            by Princeton University under the following license. By obtaining,
+                            using and/or copying this software and database, you agree that you
+                            have read, understood, and will comply with these terms and
+                            conditions.:
+
+                            Permission to use, copy, modify and distribute this software and
+                            database and its documentation for any purpose and without fee or
+                            royalty is hereby granted, provided that you agree to comply with
+                            the following copyright notice and statements, including the
+                            disclaimer, and that the same appear on ALL copies of the software,
+                            database and documentation, including modifications that you make
+                            for internal use or for distribution.
+
+                            WordNet 1.6 Copyright 1997 by Princeton University. All rights
+                            reserved.
+
+                            THIS SOFTWARE AND DATABASE IS PROVIDED "AS IS" AND PRINCETON
+                            UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR
+                            IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, PRINCETON
+                            UNIVERSITY MAKES NO REPRESENTATIONS OR WARRANTIES OF MERCHANT-
+                            ABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE
+                            LICENSED SOFTWARE, DATABASE OR DOCUMENTATION WILL NOT INFRINGE ANY
+                            THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+
+                            The name of Princeton University or Princeton may not be used in
+                            advertising or publicity pertaining to distribution of the software
+                            and/or database. Title to copyright in this software, database and
+                            any associated documentation shall at all times remain with
+                            Princeton University and LICENSEE agrees to preserve same.
+                        </copyright>
+                    </source>
+                </sources>
+            </source>
+        </sources>
+    </metadata>
+    <entry>
+        <term>bird</term>
+        <part-of-speech>noun</part-of-speech>
+        <synonym>
+            <term>maya</term>
+        </synonym>
+        <synonym>
+            <term>ibon</term>
+        </synonym>
+        <synonym>
+            <term>bayung</term>
+        </synonym>
+        <synonym>
+            <term>gamgam</term>
+        </synonym>
+        <synonym>
+            <term>parrot</term>
+        </synonym>
+    </entry>
+    <entry>
+        <term>Car</term>
+        <part-of-speech>noun</part-of-speech>
+        <synonym>
+            <term>Ford</term>
+            <part-of-speech>noun</part-of-speech>
+        </synonym>
+        <synonym>
+            <term>automobile</term>
+            <part-of-speech>noun</part-of-speech>
+        </synonym>
+        <synonym>
+            <term>Fiat</term>
+            <part-of-speech>noun</part-of-speech>
+        </synonym>
+    </entry>
+</thesaurus>
