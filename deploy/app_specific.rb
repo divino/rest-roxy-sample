@@ -4,7 +4,7 @@
 # This class has access to all of the private variables in deploy/lib/server_config.rb
 #
 # any public method you create here can be called from the command line. See
-# the examples below for more information.
+# the com.marklogic.rest below for more information.
 #
 class ServerConfig
 

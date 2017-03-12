@@ -1,4 +1,6 @@
-package com.marklogic.rest.examples.pojo;
+package com.marklogic.rest.wrappers.pojo;
+
+import java.util.Arrays;
 
 /**
  * Created by dbagayau on 12/03/2017.
@@ -16,11 +18,12 @@ public class Person {
 
     }
 
-    public Person(String firstName, String lastName, String middleName, int age) {
+    public Person(String firstName, String lastName, String middleName, int age, String[] friends) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.middleName = middleName;
         this.age = age;
+        this.friends = friends;
     }
 
     public String getFirstName() {
@@ -61,5 +64,16 @@ public class Person {
 
     public void setFriends(String[] friends) {
         this.friends = friends;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", age=" + age +
+                ", friends=" + Arrays.toString(friends) +
+                '}';
     }
 }

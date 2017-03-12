@@ -74,7 +74,7 @@ declare variable $c:CTRL-EXT := ("@ml.controller-ext", $def:CTRL-EXT)[1];
  : ***********************************************
  : A decent place to put your appservices search config
  : and various other search options.
- : The examples below are used by the appbuilder style
+ : The wrappers below are used by the appbuilder style
  : default application.
  : ***********************************************
  :)

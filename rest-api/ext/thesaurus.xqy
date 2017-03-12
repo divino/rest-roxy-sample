@@ -65,9 +65,7 @@ function yourNSAlias:get(
       let $synonyms := thsr:lookup($thesaurus, $word)//thsr:synonym/thsr:term/fn:string()
       return document {
         object-node {
-          "synonyms" : array-node {
-            json:to-array($synonyms)
-          }
+          "synonyms" : json:to-array($synonyms)
         }
       }
     else (
