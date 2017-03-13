@@ -1,6 +1,8 @@
 package com.marklogic.rest.wrappers;
 
 import com.marklogic.rest.pojo.Synonyms;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,6 +18,8 @@ import com.marklogic.rest.wrappers.pojo.Person;
 
 @SpringBootApplication
 public class Main implements CommandLineRunner {
+
+	Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
 	@Autowired
 	private Crud crud;
@@ -39,7 +43,7 @@ public class Main implements CommandLineRunner {
 
 		Person personResult = crud.retrieve(docUri);
 
-		System.out.println("get " + personResult.toString());
+		LOGGER.debug("get " + personResult.toString());
 
 		String thesaurusUri = "samplekangurant.xml";
 
@@ -49,7 +53,7 @@ public class Main implements CommandLineRunner {
 
 		Synonyms synonyms = thesaurus.retrieve(thesaurusUri, word);
 
-		System.out.println("word '" + word + "' " + synonyms.toString());
+		LOGGER.debug("word '" + word + "' " + synonyms.toString());
 	}
 
 	public static void main(String[] args) {
