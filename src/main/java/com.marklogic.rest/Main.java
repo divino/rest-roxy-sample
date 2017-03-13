@@ -1,12 +1,11 @@
 package com.marklogic.rest.wrappers;
 
 import com.marklogic.rest.pojo.Synonyms;
-import com.marklogic.rest.wrappers.pojo.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
+import com.marklogic.rest.wrappers.pojo.Person;
 
 /*
 * Spring code references:
@@ -16,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 */
 
 @SpringBootApplication
-public class Main {
+public class Main implements CommandLineRunner {
 
 	@Autowired
 	private Crud crud;
@@ -24,13 +23,8 @@ public class Main {
 	@Autowired
 	private Thesaurus thesaurus;
 
-
-	public static void main(String[] args) {
-		SpringApplication.run(Main.class, args);
-	}
-
-	@Bean
-	public CommandLineRunner run() throws Exception {
+	@Override
+	public void run(String... strings) throws Exception {
 		String docUri = "/person/data1.json";
 
 		Person person = new Person(
@@ -56,8 +50,10 @@ public class Main {
 		Synonyms synonyms = thesaurus.retrieve(thesaurusUri, word);
 
 		System.out.println("word '" + word + "' " + synonyms.toString());
+	}
 
-		return null;
+	public static void main(String[] args) {
+		SpringApplication.run(Main.class, args);
 	}
 
 }

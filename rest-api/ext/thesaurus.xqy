@@ -69,7 +69,7 @@ function yourNSAlias:get(
         }
       }
     else (
-      map:put($context, "output-status", (400, "Error loading thesaurus.")),
+      map:put($context, "output-status", (400, "Invalid parameters.")),
       document {
         object-node {
           "errorMessage": "Missing 'word' or 'thesaurus' parameter."
